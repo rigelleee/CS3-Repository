@@ -11,7 +11,8 @@
 **The problem:** Search for a Number in a Sorted List
 
 For example: Both algorithms could search:  
-`numbers = [5, 12, 18, 23, 31, 47, 56, 68, 74, 90]`, `target = 47`
+`numbers = [5, 12, 18, 23, 31, 47, 56, 68, 74, 90]`
+`target = 47`
 
 #### Implementation 1
 ```python
@@ -48,7 +49,7 @@ def binary_search(numbers, target):
 
 The first thing we notice about algorithm 2 was the fact that as it searches, it reduces the search area in a way it separates the search area into intervals. On the other hand, algorithm 1 checks every single item in the list before its breakdown, making it inefficient when handling large datasets.
 
-| Implementation 1 Checklist | Implementation 2 Checklist |
+| Implementation 1 | Implementation 2 |
 | :--- | :--- |
 | - [x] How many elements might the algorithm need to check? | - [x] How many elements might the algorithm need to check? |
 | - [x] Does the algorithm reduce the search area as it runs? | - [x] Does the algorithm reduce the search area as it runs? |
@@ -61,7 +62,7 @@ The first thing we notice about algorithm 2 was the fact that as it searches, it
 
 The first algorithm is easier to understand as the code is simple and the intent is clear. For an individual with a certain level of background knowledge regarding loops in coding, it's understandable what the program is trying to do. However, for the second algorithm, the variable names and the goal of the program is unclear if it's not exactly the step child at first glance. Although algorithm 2 uses if loops—which are easier to intuitively understand—the variable names and conditions are confusing.
 
-| Implementation 1 Checklist | Implementation 2 Checklist |
+| Implementation 1  | Implementation 2  |
 | :--- | :--- |
 | - [x] How meaningful are the variable names? | - [x] How meaningful are the variable names? |
 | - [x] How simple is the logic? | - [x] How simple is the logic? |
@@ -75,7 +76,7 @@ The first algorithm is easier to understand as the code is simple and the intent
 
 Due to algorithm 1's simplicity, it's much more straightforward than algorithm 2. Ergo, it's easier to manipulate without causing minimal error. Meanwhile, the second algorithm uses a more complex structure, which may leave it vulnerable to more errors.
 
-| Implementation 1 Checklist | Implementation 2 Checklist |
+| Implementation 1  | Implementation 2  |
 | :--- | :--- |
 | - [x] Is the logic straightforward? | - [x] Is the logic straightforward? |
 | - [x] Would adding new steps break the code easily? | - [x] Would adding new steps break the code easily? |
@@ -88,7 +89,7 @@ Due to algorithm 1's simplicity, it's much more straightforward than algorithm 2
 
 The first algorithm is much easier to test with different inputs. It can easily search through small lists and it has less things to check compared to the structure in algorithm 2. Since the structure is straightforward and easy to manipulate compared to that of algorithm 2, the output is easier to predict.
 
-| Implementation 1 Checklist | Implementation 2 Checklist |
+| Implementation 1  | Implementation 2  |
 | :--- | :--- |
 | - [x] Can you test with small lists easily? | - [x] Can you test with small lists easily? |
 | - [x] Does the algorithm have fewer conditions to check? | - [x] Does the algorithm have fewer conditions to check? |
@@ -101,7 +102,7 @@ The first algorithm is much easier to test with different inputs. It can easily 
 
 Algorithm 2, although highly effective for datasets with numerical values, is less resilient to user errors than the first implementation. Between algorithms 1 and 2, the latter relies on arithmetic operations to search for its target. In the event there is an error in the "numbers" list, such as the inclusion of a non-numerical value, it won't be able to run properly. The first algorithm, meanwhile, simply checks whether or not a value in the list is equal to the target or not. In fact, the first algorithm does not need the values to be numbers in the first place.
 
-| Implementation 1 Checklist | Implementation 2 Checklist |
+| Implementation 1  | Implementation 2  |
 | :--- | :--- |
 | - [x] Does the algorithm check if the list is empty? | - [x] Does the algorithm check if the list is empty? |
 | - [x] Does it handle non-numeral inputs (like letters instead of numbers)? | - [x] Does it handle non-numeral inputs (like letters instead of numbers)? |
