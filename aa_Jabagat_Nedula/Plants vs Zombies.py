@@ -74,8 +74,8 @@ while game != "end":
         turn+=1
 #Testing Checklist
 
-#The two plants have different damage values: Plant 1 damage = 10, Plant 2 damage = 15, Zombie health = 75
+#The two plants have different damage values:
 #Plants defeat the Zombie: Zombie health = 0, Game ends
-#Zombie reaches distance 0 and damages a plant = Plant 1 health = 100, Zombie distance = 0, Zombie damage = 50, Plant health = 50
-#Zombie targets the second plant after the first plant is defeated: Zombie's initial distance (from nearest living plant)= 0, Zombie's new distance (from nearest living plant) = 2
+#Zombie reaches distance 0 and damages a plant
+#Zombie targets the second plant after the first plant is defeated: Zombie's initial distance (from nearest living plant)
 #Game stops when the Zombie or both plants are defeated: Zombie health = 0, Game Ends
